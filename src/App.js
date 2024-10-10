@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRouter from './router';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className='text-red-700 underline'>App</div>
+    <Router>
+      <Navbar />
+      <main className='scroll-smooth'>
+        <AppRouter />
+      </main>
+      <Footer />
+    </Router>
   )
 }
 
