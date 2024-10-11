@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <main className='scroll-smooth'>
+      <main className='relative scroll-smooth'>
         <AppRouter />
       </main>
       <Footer />
