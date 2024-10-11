@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`w-1/2 bg-[#f0f8ff] flex flex-col items-end justify-start absolute top-[80px] left-0 min-h-screen transition-transform duration-500 ease-in-out ${isOpen ? '-translate-x-0' : '-translate-x-full'}`}>
+      <div className={`w-1/2 bg-[#f0f8ff] flex flex-col items-end justify-start absolute top-[80px] left-0 min-h-screen z-50 transition-transform duration-500 ease-in-out ${isOpen ? '-translate-x-0' : '-translate-x-full'}`}>
         <ul className='w-full pt-10 pl-10 flex flex-col items-start gap-5'>
           {
             navLinks.map((item, index) => {
